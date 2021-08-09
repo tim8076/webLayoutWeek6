@@ -1,7 +1,26 @@
 @import "../../../node_modules/bootstrap/scss/functions";
-@import "./helpers/variables";
+@import "./helpers/variables"; //自訂變數
+@import "../../../node_modules/bootstrap/scss/utilities";
+@import "./vendor/bs-utilities"; //自訂 utilities
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
-@import './layout/index.scss'
 
+//base
+@import './base/base';
 
+//helper
+@import './helpers/helper';
+@import './helpers/mq';
+@import './helpers/mixins';
+
+//layout
+@import './layout/header';
+@import './layout/footer';
+@import './layout/likes';
+@import './layout/subscribe';
+
+//pages
+@import './pages/index.scss';
+
+//component
+@import './component/navbar';

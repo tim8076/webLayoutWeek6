@@ -1,0 +1,32 @@
+.c-navbar{
+    &__list{
+        display: flex;
+        list-style: none;
+        padding: 0;
+        overflow-x: scroll;
+        @include hide-scrollbar;
+    }
+    &__item{
+       flex-shrink: 0;
+    }
+    &__link{
+        padding: 14px 16px;
+        margin-right: 9px;
+        margin-left: 9px;
+        position: relative;
+        &::before{
+            opacity: 0;
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 10px;
+            right: 0;
+            height: 1px;
+            background-color: $primary-light;
+            transition: $transition-base;
+        }
+        &:hover::before{
+            opacity: 1;
+        }
+    }
+}

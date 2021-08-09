@@ -1,0 +1,15 @@
+.page-index{
+  .jumbotorn{
+    height: 480px;
+    background-image: url('../images/jumbotron-bg.jpg');
+  }
+  .jumbotorn .text{
+    @include mq(md){
+      padding-left: 95px;
+    }
+  }
+  .stream{
+    background-image: url('../images/people2.png');
+    height: 482px;
+  }
+}

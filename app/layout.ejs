@@ -8,52 +8,114 @@
     <title><%- title %></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <link rel="stylesheet" href="./assets/style/all.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
+    <header class="header border-bottom">
+      <div class="container py-7 px-md-3 position-relative">
+        <h1 class="fs-4 lh-1 fw-normal text-center">
+          <a href="#" class="text-primary">EXHIBINECTION</a>
+        </h1>
+        <nav class="position-absolute end-5 end-lg-0 top-50 translate-middle-y">
+           <ul class="list-unstyled d-flex align-items-center">
+             <li class="d-none d-md-block">
+               <a class="px-4" 
+                  href="#">Sign in</a>
+              </li>
+             <li class="d-none d-md-block">
+               <a class="px-4" 
+                  href="#">Sign up</a>
+              </li>
+             <li>
+                <a class="ps-4 position-relative" 
+                   href="#">
+                  <span class="material-icons d-block text-dark ">
+                    confirmation_number
+                  </span>
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    3
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </a>
+              </li>
+           </ul>
+        </nav>
       </div>
-    </nav>
+    </header>
 
     <%- contents %>
-
-    <footer class="footer">
-      footer
+    <div class="container mb-15">
+      <h2 class="mb-6 fs-2">猜你也喜歡...</h2>
+      <ul class="row list-unstyled justify-content-lg-end">
+        <li class="col-md-6 col-lg-4 mb-4">
+          <a href="#" class="text-dark">
+            <img class="like-img mb-1 img-cover"
+                src="assets/images/stream-1.jpg" alt="stream-image">
+            <h3 class="fs-5 mb-1">No.22 線上設計展</h3>
+            <p class="fs-5">$350</p>
+          </a>
+        </li>
+        <li class="col-md-6 col-lg-4 mb-4">
+          <a href="#" class="text-dark">
+            <img class="like-img mb-1 img-cover" 
+                 src="assets/images/stream-2.jpg" alt="stream-image">
+            <h3 class="fs-5 mb-1">No.22 線上設計展</h3>
+            <p class="fs-5">$350</p>
+          </a>
+        </li>
+        <li class="col-md-6 col-lg-3 mb-4">
+          <a href="#" class="text-dark">
+            <img class="like-img mb-1 img-cover" src="assets/images/stream-3.jpg" alt="stream-image">
+            <h3 class="fs-5 mb-1">No.22 線上設計展</h3>
+            <p class="fs-5">$350</p>
+          </a>  
+        </li>
+      </ul>
+    </div>
+    <div class="bg-dark">
+        <div class="container subscribe bg-cover
+                    d-flex flex-column justify-content-end">
+            <h2 class="text-light mb-3">想收到展覽的最新消息嗎？<br> 快訂閱我們！</h2>
+            <div class="row mb-9">
+              <div class="col-md-6 col-lg-4">
+                <div class="input-group">
+                  <input type="text" 
+                         class="form-control" 
+                         placeholder="輸入您的電子信箱" 
+                         aria-label="輸入您的電子信箱"
+                         aria-describedby="button-addon2">
+                  <button class="btn btn-primary-light" 
+                          type="button" 
+                          id="button-addon2">訂閱
+                  </button>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+    </div>
+    <footer class="footer py-7">
+      <div class="container">
+          <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex flex-column flex-md-row align-items-md-center">
+                <a class="fs-4 text-dark me-4"
+                   href="#">EXHIBINECTION
+                </a>
+                <p>© 2020. All Rights Reserved.</p>
+              </div>
+              <ul class="d-none
+                         d-md-flex align-items-center list-unstyled">
+                <li>
+                  <a href="#">Sign in</a>
+                </li>
+                <li class="ms-6">
+                  <a href="#">Sign up</a>
+                </li>
+              </ul>
+          </div>
+      </div>
     </footer>
-
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
