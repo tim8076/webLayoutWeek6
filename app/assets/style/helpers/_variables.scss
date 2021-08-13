@@ -255,6 +255,10 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 $spacer: 1rem !default;
 $spacers: (
   "gw": $spacer * 0.9375, //15px 
+  "gw-large": $spacer * 1.875, //30px
+  small: $spacer * 0.625, //10px
+  lg: $spacer * 5,    //80px
+  xlg: $spacer * 6,   //96px
   0: 0,
   1: $spacer * .25,  //4px
   2: $spacer * .5,   //8px
@@ -470,6 +474,9 @@ $h6-font-size:                $font-size-base !default;
 
 // scss-docs-start font-sizes
 $font-sizes: (
+  small: $font-size-base * 0.875, //14
+  large: $font-size-base * 2.5, //40
+  xLarge: $font-size-base * 2.75, //44
   1: $font-size-base * 2.25, //36
   2: $font-size-base * 2,    //32
   3: $font-size-base * 1.75, //28
@@ -689,7 +696,7 @@ $form-text-color:                       $text-muted !default;
 // scss-docs-end form-text-variables
 
 // scss-docs-start form-label-variables
-$form-label-margin-bottom:              .5rem !default;
+$form-label-margin-bottom:              0.25rem ; //.5rem !default;
 $form-label-font-size:                  null !default;
 $form-label-font-style:                 null !default;
 $form-label-font-weight:                null !default;
@@ -697,8 +704,8 @@ $form-label-color:                      null !default;
 // scss-docs-end form-label-variables
 
 // scss-docs-start form-input-variables
-$input-padding-y:                       $input-btn-padding-y !default;
-$input-padding-x:                       $input-btn-padding-x !default;
+$input-padding-y:                       0.4375rem !default; //$input-btn-padding-y !default;
+$input-padding-x:                       0.75rem !default;   //$input-btn-padding-x !default;
 $input-font-family:                     $input-btn-font-family !default;
 $input-font-size:                       $input-btn-font-size !default;
 $input-font-weight:                     $font-weight-base !default;
@@ -721,7 +728,7 @@ $input-border-color:                    $gray-400 !default;
 $input-border-width:                    $input-btn-border-width !default;
 $input-box-shadow:                      $box-shadow-inset !default;
 
-$input-border-radius:                   $border-radius !default;
+$input-border-radius:                   0.25rem;         //$border-radius !default;
 $input-border-radius-sm:                $border-radius-sm !default;
 $input-border-radius-lg:                $border-radius-lg !default;
 
@@ -1110,7 +1117,7 @@ $card-border-color:                 rgba($black, .125) !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
 $card-cap-padding-y:                $card-spacer-y * .5 !default;
 $card-cap-padding-x:                $card-spacer-x !default;
-$card-cap-bg:                       rgba($black, .03) !default;
+$card-cap-bg:                       $white;      //rgba($black, .03) !default;
 $card-cap-color:                    null !default;
 $card-height:                       null !default;
 $card-color:                        null !default;
@@ -1461,16 +1468,16 @@ $btn-close-white-filter:     invert(1) grayscale(100%) brightness(200%) !default
 // Offcanvas
 
 // scss-docs-start offcanvas-variables
-$offcanvas-padding-y:               $modal-inner-padding !default;
-$offcanvas-padding-x:               $modal-inner-padding !default;
-$offcanvas-horizontal-width:        400px !default;
+$offcanvas-padding-y:               0px !default;    //$modal-inner-padding !default;
+$offcanvas-padding-x:               0px !default;    //$modal-inner-padding !default;
+$offcanvas-horizontal-width:        540px  !default;  //400px !default;
 $offcanvas-vertical-height:         30vh !default;
 $offcanvas-transition-duration:     .3s !default;
 $offcanvas-border-color:            $modal-content-border-color !default;
 $offcanvas-border-width:            $modal-content-border-width !default;
 $offcanvas-title-line-height:       $modal-title-line-height !default;
-$offcanvas-bg-color:                $modal-content-bg !default;
-$offcanvas-color:                   $modal-content-color !default;
+$offcanvas-bg-color:                $black;                 //$modal-content-bg !default;
+$offcanvas-color:                   $white;                 //$modal-content-color !default;
 $offcanvas-box-shadow:              $modal-content-box-shadow-xs !default;
 // scss-docs-end offcanvas-variables
 

@@ -1,0 +1,38 @@
+
+.progres-list{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding-top: 0.25rem;
+    border-top: 2px solid $primary-light;
+    &__item{
+        font-size: $font-size-sm;
+        font-weight: $font-weight-light;
+        position: relative;
+        &::before,
+        &.active::before{
+            content: "";
+            position: absolute;
+            top:  -9px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+        &::before{
+            background-color: $white;
+            border: 1px solid $primary-light;
+        }
+        &.active::before{
+            background-color: $primary-light;
+            border: 1px solid $primary-light;
+        }
+        &.active{
+            font-weight: $font-weight-medium;
+        }
+        @include mq(md){
+            font-size: $font-size-base;
+        }
+    }
+}

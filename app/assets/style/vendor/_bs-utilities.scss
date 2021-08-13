@@ -26,6 +26,7 @@ $utilities: map-merge(
         values: map-merge(
           map-get(map-get($utilities, "width"), "values"),
           (10: 10%,
+           30: 30%,
            40: 40%))
       )
     ),
@@ -33,9 +34,14 @@ $utilities: map-merge(
       map-get($utilities, "height"),
       ( responsive: true ),
     ),
+    "border-end": map-merge(
+      map-get($utilities, "border-end"),
+      ( responsive: true ),
+    ),
     "font-size": map-merge(
       map-get($utilities, "font-size"),
-      ( responsive: true ),
+      ( responsive: true,
+        rfs: false ),
     ),
     "font-weight": map-merge(
       map-get($utilities, "font-weight"),

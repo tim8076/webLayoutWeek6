@@ -21,6 +21,13 @@
 
 //pages
 @import './pages/index.scss';
+@import './pages/ticket';
+@import './pages/checkout';
 
 //component
 @import './component/navbar';
+@import './component/progress-bar';
+
+//vendor
+@import "./vendor/bs-offcanvas";
+@import './vendor/swiper';
