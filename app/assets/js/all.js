@@ -16,3 +16,9 @@ const swiper = new Swiper(".mySwiper", {
     },
   }
 });
+
+AOS.init({
+  offset: 140,
+  duration: 1500,
+  once: true
+})
