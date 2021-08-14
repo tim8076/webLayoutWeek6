@@ -14,10 +14,8 @@
 @import './helpers/mixins';
 
 //layout
-@import './layout/header';
-@import './layout/footer';
-@import './layout/likes';
-@import './layout/subscribe';
+@import './layout/likes'; //首頁 猜您也喜歡
+@import './layout/subscribe'; //首頁 訂閱電子報
 
 //pages
 @import './pages/index.scss';
