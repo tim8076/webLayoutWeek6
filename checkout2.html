@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>填寫訂購資訊</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/style/all.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet">
+    
+  </head>
+
+  <body>
+    <header class="header border-bottom">
+      <div class="container py-7 px-md-3 position-relative">
+        <h1 class="fs-4 lh-1 fw-normal text-center">
+          <a href="index.html" class="text-primary">EXHIBINECTION</a>
+        </h1>
+        <nav class="position-absolute end-5 end-lg-0 top-50 translate-middle-y">
+           <ul class="list-unstyled d-flex align-items-center">
+             <li class="d-none d-md-block">
+               <a class="px-4" 
+                  href="#">Sign in</a>
+              </li>
+             <li class="d-none d-md-block">
+               <a class="px-4" 
+                  href="#">Sign up</a>
+              </li>
+             <li>
+                <a class="ps-4 position-relative" 
+                   href="#"
+                   data-bs-toggle="offcanvas" 
+                   data-bs-target="#offcanvasRight" 
+                   aria-controls="offcanvasRight">
+                  <span class="material-icons d-block text-dark ">
+                    confirmation_number
+                  </span>
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    3
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </a>
+              </li>
+           </ul>
+        </nav>
+      </div>
+    </header>
+    
+
+    <div class="page-checkout">
+    <div class="container pt-5 pb-10">
+        <div class="row">
+            <div class="col-lg-8">
+                <ul class="progres-list mb-5 mb-md-7">
+                    <li class="progres-list__item active">確認訂單</li>
+                    <li class="progres-list__item active">填寫訂購資訊</li>
+                    <li class="progres-list__item">填寫付款資訊</li>
+                    <li class="progres-list__item">完成訂購</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row flex-column justify-content-between h-100
+                    flex-lg-row">
+            <div class="col-lg-8 mb-12">
+                <ul>
+                    <li class="row g-gw g-md-gw-large mb-5">
+                        <div class="col-6 col-md-3">
+                            <img class="checkout-image img-cover" src="assets/images/ex-img-3.jpg" alt="ex-img-3">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <h2 class="fw-bold fs-6 mb-1">
+                                2020 台味設計展
+                            </h2>
+                            <p class="fw-medium mb-1">01 JUN — 31 OCT</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="text-gray-200">
+                                    全票
+                                    <span class="text-dark fs-5 d-md-none">1</span>
+                                </p>
+                                <p class="fs-5 fw-bold d-md-none">NT$350</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 d-none d-md-block">
+                            <div class="d-flex justify-content-between align-items-center h-100">
+                                <p class="fs-5 fw-bold ">NT$350</p>
+                                <p class="fs-5 fw-bold d-none d-md-block">1</p>
+                            </div>
+                        </div>             
+                    </li>
+                    <li class="row g-gw g-md-gw-large mb-5">
+                        <div class="col-6 col-md-3">
+                            <img class="checkout-image img-cover" src="assets/images/ex-img-1.jpg" alt="ex-img-1">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <h2 class="fw-bold fs-6 mb-1">
+                                No.22 線上設計展
+                            </h2>
+                            <p class="fw-medium mb-1">01 JUN — 31 OCT</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="text-gray-200">
+                                    全票
+                                    <span class="text-dark fs-5 d-md-none">1</span>
+                                </p>
+                                <p class="fs-5 fw-bold d-md-none">NT$350</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 d-none d-md-block">
+                            <div class="d-flex justify-content-between align-items-center h-100">
+                                <p class="fs-5 fw-bold ">NT$350</p>
+                                <p class="fs-5 fw-bold d-none d-md-block">1</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="row g-gw g-md-gw-large">
+                        <div class="col-6 col-md-3">
+                            <img class="checkout-image img-cover" src="assets/images/ex-img-2.jpg" alt="ex-img-2">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <h2 class="fw-bold fs-6 mb-1">
+                                高雄設計節
+                            </h2>
+                            <p class="fw-medium mb-1">01 JUN — 31 OCT</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="text-gray-200">
+                                    全票
+                                    <span class="text-dark fs-5 d-md-none">1</span>
+                                </p>
+                                <p class="fs-5 fw-bold d-md-none">NT$350</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 d-none d-md-block">
+                            <div class="d-flex justify-content-between align-items-center h-100">
+                                <p class="fs-5 fw-bold ">NT$350</p>
+                                <p class="fs-5 fw-bold d-none d-md-block">1</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 align-self-md-end 
+                        order-first order-lg-1
+                        mb-6 mb-md-6 mb-lg-3">
+                <div>
+                    <h2 class="fs-5 mb-4 mb-md-5">訂購人資訊</h2>
+                    <div class="mb-4 mb-md-5">
+                        <label for="email" class="form-label mb-1">Email</label>
+                        <input type="email" class="form-control" id="email" 
+                               placeholder="example@gmail.com">
+                    </div>
+                    <div class="mb-4 mb-md-5">
+                        <label for="name" class="form-label mb-1">姓名</label>
+                        <input type="text" class="form-control" 
+                               id="name" placeholder="請輸入姓名">
+                    </div>
+                    <div class="mb-4 mb-md-5">
+                        <label for="tel" class="form-label mb-1">聯絡電話</label>
+                        <input type="tel" class="form-control" 
+                               id="tel" placeholder="請輸入電話">
+                    </div>
+                    <div class="mb-13">
+                        <label for="coupon" class="form-label mb-1">優惠碼</label>
+                        <input type="text" class="form-control mb-1" id="coupon" 
+                               placeholder="TG87526">
+                        <p class="text-end fs-small text-primary">優惠碼已生效</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center
+                                fw-medium mb-1">
+                        <p>小計</p>
+                        <p class="fw-light">NT$1050</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center
+                                fw-medium mb-1">
+                        <p>折扣</p>
+                        <p class="fw-light">-NT$50</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center
+                                fs-5 fw-medium">
+                        <p>總金額</p>
+                        <p>NT$1000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 order-md-2">
+                <div class="row justify-content-lg-between">
+                    <div class="col-6 col-lg-2">
+                        <a href="checkout1.html" class="btn btn-outline-primary w-100">
+                            返回
+                        </a>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <a href="checkout3.html" class="btn btn-primary-light w-100">
+                            下一步
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- off canvas -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header mb-3">
+      <h5 class="fs-2" id="offcanvasRightLabel">Cart List</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="list-unstyled text-dark">
+          <li class="mb-2">
+            <div class="card">
+              <div class="card-header d-flex pt-1 px-1 pb-0 mb-2 border-0">
+                <a href="#" class="text-dark">
+                  <span class="material-icons-outlined d-block">
+                    close
+                  </span>
+                </a>
+              </div>
+              <div class="card-body pt-0 px-4 pb-4 px-md-8 pb-md-6">
+                  <div class="d-flex">
+                      <img class="canvas-image me-4" 
+                           src="assets/images/ex-img-3.jpg" 
+                           alt="ex-img-3">
+                      <div class="d-flex justify-content-between">
+                           <div>
+                              <h3 class="fs-6 mb-1">2020 台味設計展</h3>
+                              <p class="fs-6 mb-1">01 JUN — 31 OCT</p>
+                              <p class="fs-6 text-gray-200 mb-3">全票</p>
+                              <p class="fs-5 fw-bold">NT$350</p>
+                           </div>
+                           <div class="w-25 w-md-30 d-flex
+                                      justify-content-center align-items-center">
+                              <div class="d-flex 
+                                          flex-column flex-md-row align-items-center">
+                                  <a href="#" class="text-dark order-md-last">
+                                    <span class="material-icons-outlined">
+                                      add
+                                    </span>
+                                  </a>
+                                  <input class="form-control fw-bold
+                                                text-center fs-5 border-0" type="text" value="1">
+                                  <a href="#" class="text-dark order-md-first">
+                                    <span class="material-icons-outlined">
+                                      remove
+                                    </span>
+                                  </a>
+                              </div>         
+                           </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </li>
+          <li class="mb-2">
+            <div class="card">
+              <div class="card-header d-flex pt-1 px-1 pb-0 mb-2 border-0">
+                <a href="#" class="text-dark">
+                  <span class="material-icons-outlined d-block">
+                    close
+                  </span>
+                </a>
+              </div>
+              <div class="card-body pt-0 px-4 pb-4 px-md-8 pb-md-6">
+                <div class="d-flex">
+                  <img class="canvas-image me-4" src="assets/images/ex-img-1.jpg" alt="ex-img-2">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <h3 class="fs-6 mb-1">2020 台味設計展</h3>
+                      <p class="fs-6 mb-1">01 JUN — 31 OCT</p>
+                      <p class="fs-6 text-gray-200 mb-3">全票</p>
+                      <p class="fs-5 fw-bold">NT$350</p>
+                    </div>
+                    <div class="w-25 w-md-30 d-flex
+                                justify-content-center align-items-center">
+                      <div class="d-flex flex-column flex-md-row align-items-center">
+                        <a href="#" class="text-dark order-md-last">
+                          <span class="material-icons-outlined">
+                            add
+                          </span>
+                        </a>
+                        <input class="form-control fw-bold
+                                                          text-center fs-5 border-0" type="text" value="1">
+                        <a href="#" class="text-dark order-md-first">
+                          <span class="material-icons-outlined">
+                            remove
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="mb-2">
+            <div class="card">
+              <div class="card-header d-flex pt-1 px-1 pb-0 mb-2 border-0">
+                <a href="#" class="text-dark">
+                  <span class="material-icons-outlined d-block">
+                    close
+                  </span>
+                </a>
+              </div>
+              <div class="card-body pt-0 px-4 pb-4 px-md-8 pb-md-6">
+                <div class="d-flex">
+                  <img class="canvas-image me-4" src="assets/images/ex-img-2.jpg" alt="ex-img-2">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <h3 class="fs-6 mb-1">2020 台味設計展</h3>
+                      <p class="fs-6 mb-1">01 JUN — 31 OCT</p>
+                      <p class="fs-6 text-gray-200 mb-3">全票</p>
+                      <p class="fs-5 fw-bold">NT$350</p>
+                    </div>
+                    <div class="w-25 w-md-30 d-flex
+                                justify-content-center align-items-center">
+                      <div class="d-flex flex-column flex-md-row align-items-center">
+                        <a href="#" class="text-dark order-md-last">
+                          <span class="material-icons-outlined">
+                            add
+                          </span>
+                        </a>
+                        <input class="form-control fw-bold
+                               text-center fs-5 border-0" type="text" value="1">
+                        <a href="#" class="text-dark order-md-first">
+                          <span class="material-icons-outlined">
+                            remove
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="pt-6 d-flex justify-content-between align-items-center">
+            <div class="d-flex fs-5">
+              <p class="me-6">小計</p>
+              <p>NT$1050</p>
+            </div>
+            <a href="checkout1.html"
+               class="btn btn-sm btn-light text-primary">前往結帳</a>
+        </div>
+    </div>
+  </div>
+
+</html>

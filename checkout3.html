@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><%- title %></title>
+    <title>填寫付款資訊</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <link rel="stylesheet" href="./assets/style/all.css">
@@ -52,7 +52,150 @@
     </header>
     
 
-    <%- contents %>
+    <div class="page-checkout">
+    <div class="container pt-5 pb-10">
+        <div class="row">
+            <div class="col-lg-8">
+                <ul class="progres-list mb-5 mb-md-7">
+                    <li class="progres-list__item active">確認訂單</li>
+                    <li class="progres-list__item active">填寫訂購資訊</li>
+                    <li class="progres-list__item active">填寫付款資訊</li>
+                    <li class="progres-list__item">完成訂購</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row flex-column justify-content-between h-100
+                    flex-lg-row">
+            <div class="col-lg-8 mb-12">
+                <ul>
+                    <li class="row g-gw g-md-gw-large mb-5">
+                        <div class="col-6 col-md-3">
+                            <img class="checkout-image img-cover" src="assets/images/ex-img-3.jpg" alt="ex-img-3">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <h2 class="fw-bold fs-6 mb-1">
+                                2020 台味設計展
+                            </h2>
+                            <p class="fw-medium mb-1">01 JUN — 31 OCT</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="text-gray-200">
+                                    全票
+                                    <span class="text-dark fs-5 d-md-none">1</span>
+                                </p>
+                                <p class="fs-5 fw-bold d-md-none">NT$350</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 d-none d-md-block">
+                            <div class="d-flex justify-content-between align-items-center h-100">
+                                <p class="fs-5 fw-bold ">NT$350</p>
+                                <p class="fs-5 fw-bold d-none d-md-block">1</p>
+                            </div>
+                        </div>             
+                    </li>
+                    <li class="row g-gw g-md-gw-large mb-5">
+                        <div class="col-6 col-md-3">
+                            <img class="checkout-image img-cover" src="assets/images/ex-img-1.jpg" alt="ex-img-1">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <h2 class="fw-bold fs-6 mb-1">
+                                No.22 線上設計展
+                            </h2>
+                            <p class="fw-medium mb-1">01 JUN — 31 OCT</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="text-gray-200">
+                                    全票
+                                    <span class="text-dark fs-5 d-md-none">1</span>
+                                </p>
+                                <p class="fs-5 fw-bold d-md-none">NT$350</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 d-none d-md-block">
+                            <div class="d-flex justify-content-between align-items-center h-100">
+                                <p class="fs-5 fw-bold ">NT$350</p>
+                                <p class="fs-5 fw-bold d-none d-md-block">1</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="row g-gw g-md-gw-large">
+                        <div class="col-6 col-md-3">
+                            <img class="checkout-image img-cover" src="assets/images/ex-img-2.jpg" alt="ex-img-2">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <h2 class="fw-bold fs-6 mb-1">
+                                高雄設計節
+                            </h2>
+                            <p class="fw-medium mb-1">01 JUN — 31 OCT</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="text-gray-200">
+                                    全票
+                                    <span class="text-dark fs-5 d-md-none">1</span>
+                                </p>
+                                <p class="fs-5 fw-bold d-md-none">NT$350</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 d-none d-md-block">
+                            <div class="d-flex justify-content-between align-items-center h-100">
+                                <p class="fs-5 fw-bold ">NT$350</p>
+                                <p class="fs-5 fw-bold d-none d-md-block">1</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 align-self-md-end 
+                        order-first order-lg-1
+                        mb-6 mb-md-6 mb-lg-3">
+                <div>
+                    <h2 class="fs-5 mb-4 mb-md-5">付款資訊</h2>
+                    <div class="mb-4 mb-md-5">
+                        <label for="account" class="form-label mb-1">信用卡帳號</label>
+                        <input type="text" class="form-control" id="account" 
+                               placeholder="Xxxx-xxxx-xxxx-xxxx">
+                    </div>
+                    <div class="mb-4 mb-md-5">
+                        <label for="due_date" class="form-label mb-1">有效日期</label>
+                        <input type="date" class="form-control" 
+                               id="due_date" placeholder="(MM/YY)">
+                    </div>
+                    <div class="mb-13">
+                        <label for="safe_code" class="form-label mb-1">安全碼</label>
+                        <input type="password" class="form-control mb-1" id="safe_code" 
+                               placeholder="***">
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center
+                                fw-medium mb-1">
+                        <p>小計</p>
+                        <p class="fw-light">NT$1050</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center
+                                fw-medium mb-1">
+                        <p>折扣</p>
+                        <p class="fw-light">-NT$50</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center
+                                fs-5 fw-medium">
+                        <p>總金額</p>
+                        <p>NT$1000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 order-md-2">
+                <div class="row justify-content-lg-between">
+                    <div class="col-6 col-lg-2">
+                        <a href="checkout2.html" class="btn btn-outline-primary w-100">
+                            返回
+                        </a>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <a href="checkout4.html" class="btn btn-primary-light w-100">
+                            下一步
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
